@@ -14,7 +14,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $updateChecker = PucFactory::buildUpdateChecker(
     'https://github.com/gy5563/woo-react-search/',
     __FILE__,
-    'my-plugin-slug'
+    'woo-react-search'
 );
 
 // Branch
