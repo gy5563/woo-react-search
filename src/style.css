@@ -1,0 +1,181 @@
+.woo-react-search-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Form — no flex needed, wrapper handles everything */
+.woo-react-search-form {
+    /* intentionally empty, just semantic */
+}
+
+/* Input Wrapper to hold the Reset Button */
+.woo-react-search-input-wrapper {
+    padding: 0px 1px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+.woo-react-search-submit-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.woo-react-search-input {
+    border-width: 0;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.woo-react-search-input:focus {
+    outline: none;
+}
+
+/* Reset (Clear) Button — inside input, left of search button */
+.woo-react-search-reset-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: color 0.2s;
+}
+
+.woo-react-search-reset-btn:hover {
+    color: #333;
+}
+
+/* Search Submit Button — inside input, rightmost edge */
+.woo-react-search-submit-btn {
+    flex-shrink: 0;
+    background-color: #c5161d;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 12px;
+    height: 100%;
+    min-width: auto;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.woo-react-search-submit-btn:hover:not(:disabled) {
+    background-color: #c70000;
+}
+
+.woo-react-search-submit-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Loading Spinner CSS Animation */
+.woo-react-search-spinner {
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: woo-spin 1s ease-in-out infinite;
+}
+
+@keyframes woo-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Dropdown Styles */
+.woo-react-search-no-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    z-index: 999;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.woo-react-search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.woo-react-search-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.woo-react-search-item {
+    border-bottom: 1px solid #eee;
+}
+
+.woo-react-search-item:last-child {
+    border-bottom: none;
+}
+
+.woo-react-search-item a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.woo-react-search-item a:hover {
+    background: #f9f9f9;
+}
+
+.woo-react-search-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.woo-react-search-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.woo-react-search-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.woo-react-search-price {
+    font-size: 13px;
+    color: #2271b1;
+}
+.woo-react-search-price del {
+    color: #999;
+    margin-right: 5px;
+}

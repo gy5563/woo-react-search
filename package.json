@@ -1,0 +1,17 @@
+{
+  "name": "woo-react-search",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.19.0",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
