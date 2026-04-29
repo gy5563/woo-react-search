@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Woo React Search
  * Description: A React-powered AJAX search bar for WooCommerce. Use shortcode [woo_react_search]
- * Version: 1.0
+ * Version: 1.01
  * Author: Laalaasaur
  */
 
