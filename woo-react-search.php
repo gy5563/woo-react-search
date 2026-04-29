@@ -8,6 +8,21 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/gy5563/woo-react-search/',
+    __FILE__,
+    'my-plugin-slug'
+);
+
+// Branch
+$updateChecker->setBranch('main');
+
+// Use GitHub Releases (important)
+$updateChecker->getVcsApi()->enableReleaseAssets();
+
 class Woo_React_Search {
 
     public function __construct() {
